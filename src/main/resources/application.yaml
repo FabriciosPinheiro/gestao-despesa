@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: gestao-custos
+ 
+# ======= Configurações do H2 ========
+  datasource:
+    url: jdbc:h2:file:./data/gestao-despesa
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update # Cria e atualiza o banco de dados automaticamente
+
+  
